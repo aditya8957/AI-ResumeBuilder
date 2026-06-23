@@ -1,0 +1,205 @@
+{
+  "students": [
+    {
+      "name": "Priya Sharma",
+      "email": "priya.sharma@email.com",
+      "phone": "+91-9876543210",
+      "location": "Bangalore, India",
+      "summary": "Passionate software developer with expertise in full-stack web development and cloud technologies. Seeking opportunities to contribute to innovative projects and grow as a developer.",
+      "skills": [
+        "Python",
+        "JavaScript",
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "AWS",
+        "Docker",
+        "Git",
+        "REST APIs",
+        "Machine Learning",
+        "Data Analysis",
+        "SQL"
+      ],
+      "education": [
+        {
+          "school": "Indian Institute of Technology Delhi",
+          "degree": "B.Tech",
+          "field": "Computer Science",
+          "graduation_year": 2024,
+          "gpa": 3.8
+        }
+      ],
+      "experience": [
+        {
+          "company": "TechStartup Solutions",
+          "position": "Full Stack Developer Intern",
+          "duration": "June 2023 - August 2023",
+          "description": "Developed and deployed 3 full-stack web applications using React and Node.js. Implemented REST APIs and database optimization reducing query time by 40%. Collaborated with 5-member team using Agile methodology.",
+          "skills_used": ["React", "Node.js", "MongoDB", "AWS"]
+        },
+        {
+          "company": "CloudTech Innovations",
+          "position": "Backend Developer (Freelance)",
+          "duration": "January 2023 - May 2023",
+          "description": "Built microservices architecture using Python and Docker. Designed and implemented CI/CD pipelines reducing deployment time by 50%. Mentored 2 junior developers.",
+          "skills_used": ["Python", "Docker", "AWS", "CI/CD"]
+        }
+      ],
+      "projects": [
+        {
+          "title": "E-Commerce Platform",
+          "description": "Full-stack web application with user authentication, product catalog, shopping cart, and payment integration. Implemented with React frontend and Node.js/Express backend.",
+          "technologies": ["React", "Node.js", "MongoDB", "Stripe API", "AWS"],
+          "link": "https://github.com/priya/ecommerce-platform",
+          "date": "December 2023"
+        },
+        {
+          "title": "Machine Learning Data Pipeline",
+          "description": "Automated data processing pipeline for sentiment analysis using Python and Scikit-learn. Achieved 92% accuracy on test dataset.",
+          "technologies": ["Python", "Scikit-learn", "Pandas", "SQL"],
+          "link": "https://github.com/priya/ml-pipeline",
+          "date": "August 2023"
+        },
+        {
+          "title": "Real-time Chat Application",
+          "description": "WebSocket-based chat application with user authentication and message history. Deployed on AWS with auto-scaling.",
+          "technologies": ["React", "Socket.io", "Node.js", "Redis"],
+          "link": "https://github.com/priya/chat-app",
+          "date": "March 2023"
+        }
+      ],
+      "certifications": [
+        "AWS Certified Cloud Practitioner",
+        "Google Cloud Professional Developer",
+        "Docker Certified Associate"
+      ],
+      "github": "https://github.com/priya-sharma",
+      "linkedin": "https://linkedin.com/in/priya-sharma",
+      "portfolio_website": "https://priya-portfolio.com"
+    },
+    {
+      "name": "Arjun Verma",
+      "email": "arjun.verma@email.com",
+      "phone": "+91-9123456789",
+      "location": "Mumbai, India",
+      "summary": "Data analyst and visualization enthusiast with strong analytical and problem-solving skills. Experienced in transforming raw data into actionable insights using Python and Power BI.",
+      "skills": [
+        "Python",
+        "SQL",
+        "Power BI",
+        "Tableau",
+        "Excel",
+        "Google Analytics",
+        "Pandas",
+        "NumPy",
+        "Statistical Analysis",
+        "Data Visualization",
+        "R",
+        "Jupyter"
+      ],
+      "education": [
+        {
+          "school": "Mumbai University",
+          "degree": "B.Sc",
+          "field": "Statistics",
+          "graduation_year": 2024,
+          "gpa": 3.6
+        }
+      ],
+      "experience": [
+        {
+          "company": "Analytics Corp India",
+          "position": "Data Analyst Intern",
+          "duration": "July 2023 - September 2023",
+          "description": "Analyzed customer behavior data and created 15+ interactive dashboards using Power BI. Identified trends resulting in 25% improvement in marketing ROI. Processed and cleaned 5GB+ of data using Python.",
+          "skills_used": ["Power BI", "Python", "SQL", "Excel"]
+        }
+      ],
+      "projects": [
+        {
+          "title": "Sales Dashboard Development",
+          "description": "Created interactive Power BI dashboard tracking KPIs across 5 regions. Automated monthly reporting saving 20 hours per month.",
+          "technologies": ["Power BI", "SQL", "Excel"],
+          "link": "https://github.com/arjun/sales-dashboard",
+          "date": "October 2023"
+        },
+        {
+          "title": "Customer Segmentation Analysis",
+          "description": "Applied K-means clustering to segment 50,000 customers into 5 meaningful groups using Python. Insights led to targeted marketing campaigns.",
+          "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+          "link": "https://github.com/arjun/customer-segmentation",
+          "date": "June 2023"
+        }
+      ],
+      "certifications": [
+        "Google Data Analytics Professional Certificate",
+        "Tableau Desktop Specialist"
+      ],
+      "github": "https://github.com/arjun-verma",
+      "linkedin": "https://linkedin.com/in/arjun-verma",
+      "portfolio_website": null
+    },
+    {
+      "name": "Sneha Patel",
+      "email": "sneha.patel@email.com",
+      "phone": "+91-9999999999",
+      "location": "Ahmedabad, India",
+      "summary": "Creative UI/UX designer passionate about building user-centric digital experiences. Skilled in prototyping, wireframing, and user research.",
+      "skills": [
+        "Figma",
+        "Adobe XD",
+        "Prototyping",
+        "User Research",
+        "Wireframing",
+        "Visual Design",
+        "Design Systems",
+        "CSS",
+        "JavaScript",
+        "HTML",
+        "Interaction Design",
+        "Usability Testing"
+      ],
+      "education": [
+        {
+          "school": "National Institute of Design",
+          "degree": "Post Graduate Diploma",
+          "field": "Interaction Design",
+          "graduation_year": 2024,
+          "gpa": 3.9
+        }
+      ],
+      "experience": [
+        {
+          "company": "DesignStudio India",
+          "position": "UI/UX Designer Intern",
+          "duration": "February 2023 - May 2023",
+          "description": "Designed user interfaces for 4 mobile applications. Conducted user research with 50+ participants. Created design systems reducing design time by 35%.",
+          "skills_used": ["Figma", "User Research", "Prototyping"]
+        }
+      ],
+      "projects": [
+        {
+          "title": "Mobile Banking App Redesign",
+          "description": "Redesigned banking app interface improving usability score from 6.2 to 8.5. Conducted 3 rounds of user testing.",
+          "technologies": ["Figma", "Adobe XD", "Prototyping"],
+          "link": "https://behance.net/sneha/banking-app",
+          "date": "November 2023"
+        },
+        {
+          "title": "E-Learning Platform Design",
+          "description": "Complete design system and UI for educational platform. Designed for 5+ different user personas.",
+          "technologies": ["Figma", "Illustrator", "User Research"],
+          "link": "https://behance.net/sneha/elearning",
+          "date": "July 2023"
+        }
+      ],
+      "certifications": [
+        "Google UX Design Certificate",
+        "Advanced Figma Course"
+      ],
+      "github": null,
+      "linkedin": "https://linkedin.com/in/sneha-patel",
+      "portfolio_website": "https://sneha-design.com"
+    }
+  ]
+}

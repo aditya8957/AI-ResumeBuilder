@@ -1,0 +1,51 @@
+{
+  "name": "Aditya Pratap",
+  "email": "alphaaditya123@gmail.com",
+  "phone": "8957434966",
+  "location": "New Delhi",
+  "summary": "I am a Computer Science student with expertise in developing full-stack web applications and a passion for coding. I\nhave successfully completed multiple projects using modern technologies like the MERN stack, React.js, and Redux,\nalong with a solid understanding of Data Structures and Algorithm and Object Oriented Programming.\n",
+  "skills": [
+    "Java",
+    "DSA",
+    "AI",
+    "MERN Stack",
+    "React",
+    "Html",
+    "CSS",
+    "JavaScript"
+  ],
+  "education": [
+    {
+      "school": "KIET Group Of Institutions",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "graduation_year": 2027,
+      "gpa": 8.5
+    }
+  ],
+  "experience": [],
+  "projects": [
+    {
+      "title": "CodeArena",
+      "description": "\u25e6 Developed a full-stack coding platform where users can solve coding problems\n\u25e6 Implemented role-based access allowing admin to create, update, and manage coding problems\n\u25e6 Built secure authentication and authorization using JWT\n\u25e6 Integrated Redis caching reducing API response time by 65 percent and Judge0 API for multi-language\nexecution with 98.4 percent uptime\n\u25e6 Designed RESTful APIs for problem management, submissions, and user profiles\n\u25e6 Tech Stack: MongoDB, Express.js, React.js, Node.js, JavaScript, Tailwind CSS, REST APIs",
+      "technologies": [
+        "MongoDB",
+        "Express.js",
+        "React.js",
+        "Node.js",
+        "JavaScript",
+        "Tailwind CSS",
+        "REST APIs"
+      ],
+      "link": "https://codearena24.tech/",
+      "date": ""
+    }
+  ],
+  "certifications": [
+    "AWS Certified Cloud Practitioner certificate",
+    "Data Structure"
+  ],
+  "github": "http/github.com",
+  "linkedin": "https://linkedin.com/in/aditya-pratap-9a768632a",
+  "portfolio_website": "https://adityapratap.me/"
+}

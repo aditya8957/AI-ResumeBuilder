@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume & Portfolio Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">✨</span>
+                    <h1>AI Resume Builder</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#profile-section" class="nav-link">Profile</a></li>
+                    <li><a href="#resume-section" class="nav-link">Resume</a></li>
+                    <li><a href="#cover-section" class="nav-link">Cover Letter</a></li>
+                    <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Build Your Professional Resume in Minutes</h2>
+                <p>AI-powered tool to create tailored resumes, cover letters, and portfolios</p>
+                <button class="btn btn-primary" onclick="scrollToProfile()">Get Started</button>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- ============ PROFILE SECTION ============ -->
+            <section id="profile-section" class="section">
+                <h2 class="section-title">📋 Your Profile</h2>
+                <div class="form-container">
+                    <form id="profileForm" class="profile-form">
+                        <!-- Basic Info -->
+                        <div class="form-section">
+                            <h3>Basic Information</h3>
+                            <div class="form-grid">
+                                <input type="text" placeholder="Full Name *" id="name" required class="form-input">
+                                <input type="email" placeholder="Email *" id="email" required class="form-input">
+                                <input type="tel" placeholder="Phone Number *" id="phone" required class="form-input">
+                                <input type="text" placeholder="Location *" id="location" required class="form-input">
+                            </div>
+                            <textarea placeholder="Professional Summary (Optional)" id="summary" class="form-textarea"></textarea>
+                        </div>
+
+                        <!-- Contact Links -->
+                        <div class="form-section">
+                            <h3>Contact & Links</h3>
+                            <div class="form-grid">
+                                <input type="url" placeholder="GitHub Profile (Optional)" id="github" class="form-input">
+                                <input type="url" placeholder="LinkedIn Profile (Optional)" id="linkedin" class="form-input">
+                                <input type="url" placeholder="Portfolio Website (Optional)" id="portfolio_website" class="form-input">
+                            </div>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="form-section">
+                            <h3>Skills</h3>
+                            <div class="skills-input-container">
+                                <input type="text" placeholder="Enter a skill and press Enter" id="skillInput" class="form-input">
+                                <button type="button" class="btn btn-secondary" onclick="addSkill()">Add Skill</button>
+                            </div>
+                            <div id="skillsList" class="skills-list"></div>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="form-section">
+                            <h3>Education</h3>
+                            <button type="button" class="btn btn-secondary" onclick="addEducation()">+ Add Education</button>
+                            <div id="educationList" class="items-list"></div>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="form-section">
+                            <h3>Work Experience</h3>
+                            <button type="button" class="btn btn-secondary" onclick="addExperience()">+ Add Experience</button>
+                            <div id="experienceList" class="items-list"></div>
+                        </div>
+
+                        <!-- Projects -->
+                        <div class="form-section">
+                            <h3>Projects</h3>
+                            <button type="button" class="btn btn-secondary" onclick="addProject()">+ Add Project</button>
+                            <div id="projectsList" class="items-list"></div>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="form-section">
+                            <h3>Certifications</h3>
+                            <div class="skills-input-container">
+                                <input type="text" placeholder="Enter certification name" id="certInput" class="form-input">
+                                <button type="button" class="btn btn-secondary" onclick="addCertification()">Add Certification</button>
+                            </div>
+                            <div id="certificationsList" class="skills-list"></div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" onclick="clearForm()">Clear Form</button>
+                            <button type="button" class="btn btn-primary" onclick="saveProfile()">Save Profile</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- ============ RESUME SECTION ============ -->
+            <section id="resume-section" class="section">
+                <h2 class="section-title">📄 Generate Resume</h2>
+                <div class="control-panel">
+                    <div class="control-group">
+                        <label>Job Title (Optional)</label>
+                        <input type="text" id="jobTitle" placeholder="e.g., Software Developer, Data Analyst" class="form-input">
+                    </div>
+                    <div class="control-group">
+                        <label>Resume Style</label>
+                        <select id="resumeStyle" class="form-input">
+                            <option value="professional">Professional</option>
+                            <option value="modern">Modern</option>
+                            <option value="creative">Creative</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="generateResume()">✨ Generate Resume with AI</button>
+                </div>
+                <div id="resumeOutput" class="output-container"></div>
+            </section>
+
+            <!-- ============ COVER LETTER SECTION ============ -->
+            <section id="cover-section" class="section">
+                <h2 class="section-title">💌 Generate Cover Letter</h2>
+                <div class="control-panel">
+                    <div class="control-group">
+                        <label>Company Name *</label>
+                        <input type="text" id="companyName" placeholder="e.g., Google, Microsoft" class="form-input" required>
+                    </div>
+                    <div class="control-group">
+                        <label>Job Title *</label>
+                        <input type="text" id="coverJobTitle" placeholder="e.g., Software Engineer" class="form-input" required>
+                    </div>
+                    <div class="control-group">
+                        <label>Job Description (Optional)</label>
+                        <textarea id="jobDescription" placeholder="Paste the job description here..." class="form-textarea"></textarea>
+                    </div>
+                    <button class="btn btn-primary" onclick="generateCoverLetter()">✨ Generate Cover Letter with AI</button>
+                </div>
+                <div id="coverLetterOutput" class="output-container"></div>
+            </section>
+
+            <!-- ============ PORTFOLIO SECTION ============ -->
+            <section id="portfolio-section" class="section">
+                <h2 class="section-title">🎨 Generate Portfolio</h2>
+                <div class="control-panel">
+                    <div class="control-group">
+                        <label>Theme Color</label>
+                        <select id="themeColor" class="form-input">
+                            <option value="blue">Blue</option>
+                            <option value="purple">Purple</option>
+                            <option value="green">Green</option>
+                            <option value="orange">Orange</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" onclick="generatePortfolio()">✨ Generate Portfolio Content with AI</button>
+                </div>
+                <div id="portfolioOutput" class="output-container"></div>
+            </section>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading-overlay hidden">
+            <div class="spinner"></div>
+            <p>Generating with AI...</p>
+        </div>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
