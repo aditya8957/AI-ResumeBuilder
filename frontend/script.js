@@ -1,5 +1,5 @@
 // ============ CONFIG ============
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = 'https://ai-resumebuilder-8w1g.onrender.com';
 
 // ============ STATE MANAGEMENT ============
 const appState = {
