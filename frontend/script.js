@@ -266,7 +266,7 @@ async function saveProfile() {
     
     try {
         showLoading(true);
-        const response = await fetch(`${API_BASE_URL}/save-profile`, {
+        const response = await fetch(`${API_BASE_URL}/api/save-profile`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -315,7 +315,7 @@ async function generateResume() {
 
     try {
         showLoading(true);
-        const response = await fetch(`${API_BASE_URL}/generate-resume`, {
+        const response = await fetch(`${API_BASE_URL}/api/generate-resume`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -447,7 +447,7 @@ async function generateCoverLetter() {
 
     try {
         showLoading(true);
-        const response = await fetch(`${API_BASE_URL}/generate-cover-letter`, {
+        const response = await fetch(`${API_BASE_URL}/api/generate-cover-letter`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -542,7 +542,7 @@ async function generatePortfolio() {
 
     try {
         showLoading(true);
-        const response = await fetch(`${API_BASE_URL}/generate-portfolio`, {
+        const response = await fetch(`${API_BASE_URL}/api/generate-portfolio`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
